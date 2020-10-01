@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments :: head"></head>
+<body>
+<div th:replace="fragments::menu"></div>
+<div class="container mb-5"><img class="home-img" src="images/home.png"></div>
+<div class="p-3 h3">Trzy najbardziej ulubione przepisy</div>
+<div th:replace="fragments::listOfRecipes(${recipes},'three')"></div>
+<div th:replace="fragments::scripts"></div>
+</body>
+</html>
