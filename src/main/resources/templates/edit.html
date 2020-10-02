@@ -18,11 +18,14 @@
     </div>
     <div class="form-group">
         <label for="description">Przepis</label>
-        <textarea th:field="*{description}" class="form-control" id="description" name="description">
+        <textarea th:field="*{description}" class="form-control" id="description" name="description"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="fileOnServer">Ilustracja do przepisu</label>
+        <input type="text" th:field="*{pictureFileName}" class="form-control" id="fileOnServer" name="fileOnServer">
     </div>
     <div class="form-group input-group">
-        <label for="file">Ilustracja do przepisu</label>
-        <input type="file" name="fileupload" class="form-control" id="file">
+        <input type="file" class="form-control" id="fileupload" name="fileupload">
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Zapisz</button>

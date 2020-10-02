@@ -4,6 +4,8 @@
 <body>
 <div th:replace="fragments::menu"></div>
 <div class="p-3 h3">Kuchnia azjatycka</div>
+<div th:replace="fragments::category(${category})"></div>
+<div class="p-3 h3">Wybrane potrawy</div>
 <div th:replace="fragments::listOfRecipes(${recipes},'azjatyckie')"></div>
 <div th:replace="fragments::scripts"></div>
 </body>

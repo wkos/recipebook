@@ -1,9 +1,6 @@
 package pl.wkos.recipebook.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import pl.wkos.recipebook.model.Category;
 import pl.wkos.recipebook.model.Recipe;
 
 import java.util.List;
