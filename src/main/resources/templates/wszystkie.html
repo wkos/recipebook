@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments :: head"></head>
+<body>
+<div th:replace="fragments::menu"></div>
+<div class="p-3 h3">Wszystkie przepisy</div>
+<div th:replace="fragments::listOfRecipes(${recipes},'wszystkie')"></div>
+<div th:replace="fragments::scripts"></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments :: head"></head>
+<body>
+<div th:replace="fragments::menu"></div>
+<div class="p-3 h3">Kuchnia arabska</div>
+<div th:replace="fragments::category(${category})"></div>
+<div class="p-3 h3">Wybrane potrawy</div>
+<div th:replace="fragments::listOfRecipes(${recipes},'arabskie')"></div>
+<div th:replace="fragments::scripts"></div>
+</body>
+</html>
